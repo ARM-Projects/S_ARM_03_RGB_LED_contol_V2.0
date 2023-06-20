@@ -43,7 +43,7 @@ typedef enum{
 
 /* section : Function Declaration*/
 
-brn_enu_return_state_t button_initializa(const button_str_btn_config_t* ptr_str_btn_config);
+brn_enu_return_state_t button_initialization(const button_str_btn_config_t* ptr_str_btn_config);
 brn_enu_return_state_t button_read_state( button_str_btn_config_t* ptr_str_btn_config, btn_enu_btn_state_t *ptr_enu_btn_state);
 
 #endif	/* PUSH_BUTTON_H */
