@@ -5,3 +5,5 @@
 .\objects\main.o: APP/../HAL/LED/../../STD_LIBRARIES/STD_TYPES.h
 .\objects\main.o: APP/../HAL/LED/../../STD_LIBRARIES/bit_math.h
 .\objects\main.o: APP/../HAL/BUTTON/Button.h
+.\objects\main.o: APP/../SERVICE/DELAY/DELAY.h
+.\objects\main.o: APP/../SERVICE/DELAY/../../MCAL/SYSTICK/SYSTICK_interface.h

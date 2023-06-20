@@ -6,6 +6,7 @@
 #include "../STD_LIBRARIES/bit_math.h"
 #include "../STD_LIBRARIES/STD_TYPES.h"
 #include "../MCAL/DIO/DIO_interface.h"
+#include "../SERVICE/DELAY/DELAY.h"
 
 typedef enum{
 	LEDS_OFF,

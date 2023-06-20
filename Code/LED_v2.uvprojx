@@ -49,7 +49,7 @@
             <InvalidFlash>1</InvalidFlash>
           </TargetStatus>
           <OutputDirectory>.\Objects\</OutputDirectory>
-          <OutputName>LED_v1</OutputName>
+          <OutputName>LED_v2</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>0</CreateHexFile>
@@ -383,14 +383,9 @@
           <GroupName>Source_files</GroupName>
           <Files>
             <File>
-              <FileName>DIO_prog.c</FileName>
+              <FileName>APP.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\MCAL\DIO\DIO_prog.c</FilePath>
-            </File>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\main.c</FilePath>
+              <FilePath>.\APP\APP.c</FilePath>
             </File>
             <File>
               <FileName>LED.c</FileName>
@@ -403,9 +398,24 @@
               <FilePath>.\HAL\BUTTON\Button.c</FilePath>
             </File>
             <File>
-              <FileName>APP.c</FileName>
+              <FileName>DIO_prog.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\APP\APP.c</FilePath>
+              <FilePath>.\MCAL\DIO\DIO_prog.c</FilePath>
+            </File>
+            <File>
+              <FileName>SYSTICK_prog.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\MCAL\SYSTICK\SYSTICK_prog.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>DELAY.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SERVICE\DELAY\DELAY.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -413,9 +423,34 @@
           <GroupName>Header_files</GroupName>
           <Files>
             <File>
-              <FileName>DIO_interface.h</FileName>
+              <FileName>bit_math.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\MCAL\DIO\DIO_interface.h</FilePath>
+              <FilePath>.\STD_LIBRARIES\bit_math.h</FilePath>
+            </File>
+            <File>
+              <FileName>interrupt.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\STD_LIBRARIES\interrupt.h</FilePath>
+            </File>
+            <File>
+              <FileName>STD_TYPES.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\STD_LIBRARIES\STD_TYPES.h</FilePath>
+            </File>
+            <File>
+              <FileName>SYSTICK_config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\MCAL\SYSTICK\SYSTICK_config.h</FilePath>
+            </File>
+            <File>
+              <FileName>SYSTICK_interface.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\MCAL\SYSTICK\SYSTICK_interface.h</FilePath>
+            </File>
+            <File>
+              <FileName>SYSTICK_private.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\MCAL\SYSTICK\SYSTICK_private.h</FilePath>
             </File>
             <File>
               <FileName>DIO_config.h</FileName>
@@ -423,19 +458,14 @@
               <FilePath>.\MCAL\DIO\DIO_config.h</FilePath>
             </File>
             <File>
+              <FileName>DIO_interface.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\MCAL\DIO\DIO_interface.h</FilePath>
+            </File>
+            <File>
               <FileName>DIO_private.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\MCAL\DIO\DIO_private.h</FilePath>
-            </File>
-            <File>
-              <FileName>bit_math.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\STD_LIBRARIES\bit_math.h</FilePath>
-            </File>
-            <File>
-              <FileName>STD_TYPES.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\STD_LIBRARIES\STD_TYPES.h</FilePath>
             </File>
             <File>
               <FileName>LED.h</FileName>
@@ -451,6 +481,11 @@
               <FileName>APP.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\APP\APP.h</FilePath>
+            </File>
+            <File>
+              <FileName>DELAY.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\SERVICE\DELAY\DELAY.h</FilePath>
             </File>
           </Files>
         </Group>
