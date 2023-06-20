@@ -5,7 +5,7 @@
 <h2>Tool Versions:</h2>
 IDE-Version: µVision V5.29.0.0
 Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: arafa arafa, hello, LIC=----
+License Information: youssef abbas, mti, LIC=----
  
 Tool Versions:
 Toolchain:       MDK-Lite  Version: 5.29.0.0
@@ -21,12 +21,68 @@ Target DLL:      lmidk-agdi.dll V???
 Dialog DLL:      TCM.DLL V1.36.5.0
  
 <h2>Project:</h2>
-D:\ARM_Project\Tiva_c\LED_v2\LED_v2.uvprojx
+Z:\Documents\Embeded system\Sprints\arm\GitHub\S_ARM_03_RGB_LED_contol_V2.0\Code\LED_v2.uvprojx
 Project File Date:  06/17/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
+compiling LED.c...
+HAL\LED\../../MCAL/DIO/DIO_interface.h(96): warning:  #1-D: last line of file ends without a newline
+  #endif
+HAL\LED\../../STD_LIBRARIES/STD_TYPES.h(64): warning:  #1-D: last line of file ends without a newline
+  #endif /* STD_TYPES_H_ */
+HAL\LED\../../STD_LIBRARIES/bit_math.h(66): warning:  #1-D: last line of file ends without a newline
+  #endif /* BIT_MATH_H_ */
+HAL\LED\LED.c: 3 warnings, 0 errors
+compiling Button.c...
+HAL\BUTTON\../../MCAL/DIO/DIO_interface.h(96): warning:  #1-D: last line of file ends without a newline
+  #endif
+HAL\BUTTON\../../STD_LIBRARIES/STD_TYPES.h(64): warning:  #1-D: last line of file ends without a newline
+  #endif /* STD_TYPES_H_ */
+HAL\BUTTON\../../STD_LIBRARIES/bit_math.h(66): warning:  #1-D: last line of file ends without a newline
+  #endif /* BIT_MATH_H_ */
+HAL\BUTTON\Button.c(104): warning:  #1-D: last line of file ends without a newline
+  }
+HAL\BUTTON\Button.c: 4 warnings, 0 errors
+compiling APP.c...
+APP\../HAL/LED/../../MCAL/DIO/DIO_interface.h(96): warning:  #1-D: last line of file ends without a newline
+  #endif
+APP\../HAL/LED/../../STD_LIBRARIES/STD_TYPES.h(64): warning:  #1-D: last line of file ends without a newline
+  #endif /* STD_TYPES_H_ */
+APP\../HAL/LED/../../STD_LIBRARIES/bit_math.h(66): warning:  #1-D: last line of file ends without a newline
+  #endif /* BIT_MATH_H_ */
+APP\../SERVICE/DELAY/../../MCAL/SYSTICK/SYSTICK_interface.h(49): warning:  #1-D: last line of file ends without a newline
+  #endif
+APP\../SERVICE/DELAY/DELAY.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+APP\APP.h(23): warning:  #1-D: last line of file ends without a newline
+  #endif
+APP\APP.c: 6 warnings, 0 errors
+compiling DIO_prog.c...
+MCAL\DIO\../../STD_LIBRARIES/STD_TYPES.h(64): warning:  #1-D: last line of file ends without a newline
+  #endif /* STD_TYPES_H_ */
+MCAL\DIO\DIO_private.h(40): warning:  #1-D: last line of file ends without a newline
+  #endif
+MCAL\DIO\DIO_interface.h(96): warning:  #1-D: last line of file ends without a newline
+  #endif
+MCAL\DIO\../../STD_LIBRARIES/bit_math.h(66): warning:  #1-D: last line of file ends without a newline
+  #endif /* BIT_MATH_H_ */
+MCAL\DIO\DIO_prog.c(295): warning:  #188-D: enumerated type mixed with another type
+  		*ptr_enu_pin_state = (HWREG32(l_un32_gpio_base_address + GPIODATA + (1 << (ptr_str_pinconfig->enu_pin + 2))) >> ptr_str_pinconfig->enu_pin);
+MCAL\DIO\DIO_prog.c: 5 warnings, 0 errors
+compiling SYSTICK_prog.c...
+MCAL\SYSTICK\../../STD_LIBRARIES/STD_TYPES.h(64): warning:  #1-D: last line of file ends without a newline
+  #endif /* STD_TYPES_H_ */
+MCAL\SYSTICK\SYSTICK_private.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+MCAL\SYSTICK\SYSTICK_interface.h(49): warning:  #1-D: last line of file ends without a newline
+  #endif
+MCAL\SYSTICK\SYSTICK_config.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+MCAL\SYSTICK\../../STD_LIBRARIES/bit_math.h(66): warning:  #1-D: last line of file ends without a newline
+  #endif /* BIT_MATH_H_ */
+MCAL\SYSTICK\SYSTICK_prog.c: 5 warnings, 0 errors
 compiling main.c...
 APP/../HAL/LED/../../MCAL/DIO/DIO_interface.h(96): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -45,9 +101,19 @@ main.c(19): warning:  #111-D: statement is unreachable
 main.c(20): warning:  #1-D: last line of file ends without a newline
   }
 main.c: 8 warnings, 0 errors
+compiling DELAY.c...
+SERVICE\DELAY\../../MCAL/SYSTICK/../../STD_LIBRARIES/STD_TYPES.h(64): warning:  #1-D: last line of file ends without a newline
+  #endif /* STD_TYPES_H_ */
+SERVICE\DELAY\../../MCAL/SYSTICK/SYSTICK_interface.h(49): warning:  #1-D: last line of file ends without a newline
+  #endif
+SERVICE\DELAY\DELAY.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+SERVICE\DELAY\DELAY.c: 3 warnings, 0 errors
+assembling startup_TM4C123.s...
+compiling system_TM4C123.c...
 linking...
-Program Size: Code=4040 RO-data=700 RW-data=24 ZI-data=608  
-".\Objects\LED_v2.axf" - 0 Error(s), 8 Warning(s).
+Program Size: Code=4044 RO-data=700 RW-data=24 ZI-data=608  
+".\Objects\LED_v2.axf" - 0 Error(s), 34 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -65,18 +131,18 @@ Package Vendor: Keil
 
 <h2>Collection of Component include folders:</h2>
   .\RTE\_Target_1
-  C:\Users\Arafa\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include
-  C:\Users\Arafa\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
+  C:\Users\Youssef Abbas\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  C:\Users\Youssef Abbas\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C123
 
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.3.0
 
    * Component: Keil::Device:Startup:1.0.1
-      Source file:   Device\Source\ARM\startup_TM4C123.s
       Include file:  Device\Include\TM4C123\TM4C123.h
+      Source file:   Device\Source\ARM\startup_TM4C123.s
       Source file:   Device\Source\system_TM4C123.c
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>
